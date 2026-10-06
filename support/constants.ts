@@ -14,16 +14,3 @@ export const sites = [
     { name: 'ENGLISH', path: 'en-ie/' },
     { name: 'UK', path: 'en-gb/' },
 ].map((site) => ({ ...site, baseURL: new URL(site.path, baseHost).toString() }));
-
-export const productDetailsGroupsTestIds = {
-    size: 'pdp-option-group-size',
-    materialAppearance: 'pdp-option-group-materialappearance',
-    paperType: 'pdp-option-group-material',
-    cover: 'pdp-option-group-cover',
-    paperWeight: 'pdp-option-group-paper-weight',
-    paperColor: 'pdp-option-group-paper-color',
-    paperFinish: 'pdp-option-group-paper-finish',
-    paperGloss: 'pdp-option-group-paper-gloss',
-    paperTexture: 'pdp-option-group-paper-texture',
-    paperThickness: 'pdp-option-group-paper-thickness',
-};
