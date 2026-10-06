@@ -2,7 +2,7 @@
  * Host the suite runs against. Override with BASE_URL to target another
  * environment (e.g. staging or a preview branch).
  */
-export const baseHost = process.env.BASE_URL ?? 'https://www.helloprint.com/';
+export const baseHost = process.env.BASE_URL || 'https://www.helloprint.com/'; // CI exports unset vars as ''
 
 /**
  * Same scenarios run once per site.
