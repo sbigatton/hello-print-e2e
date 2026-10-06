@@ -1,0 +1,11 @@
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Local environment (may contain the WAF bypass secret)
+.env
+.env.*
